@@ -4,7 +4,7 @@ The Generals.io Map Creation Helper allows users to easily create and publish ma
 
 - a paint function that allows users to edit the map by dragging their mouse instead of individually clicking squares
 - a rectangular fill function that allows users to add large sections of uniform terrain to their map
-- a select function that can cutting, copying, and pasting of regions on the map
+- a select function that can cut, copy, and paste regions on the map
 - a save/load function that can save maps to be edited later or shared with others
 
 ## Getting Started
