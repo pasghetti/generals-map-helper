@@ -227,9 +227,7 @@ public class GUI {
 					connect.setRequestProperty("Accept-Language", "en-US,en;q=0.9");
 					connect.setRequestProperty("Content-Type", "application/json");
 					Gson gson = new Gson();
-					System.out.println(System.getenv().get("GeneralsID"));
 					String mapJson = gson.toJson(new MapData(title, desc, display.getCols(), display.getRows(), display.getMapRepresentation(), System.getenv().get("GeneralsID")));
-					System.out.println(mapJson);
 					try(OutputStream os = connect.getOutputStream()) {
 						os.write(mapJson.getBytes());
 					}
@@ -248,7 +246,6 @@ public class GUI {
 					}
 				} catch (IOException e1) {
 					JOptionPane.showMessageDialog(parent, "Failed to connect to server: " + e1.getMessage(), "Connection error", JOptionPane.ERROR_MESSAGE);
-					e1.printStackTrace();
 				}
 			}
 		});
