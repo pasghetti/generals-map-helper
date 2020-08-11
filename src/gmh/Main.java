@@ -16,7 +16,7 @@ public class Main {
 			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
 				e.printStackTrace(System.out);
 			}            
-			JFrame win = new JFrame();
+			JFrame win = new JFrame("Generals Map Helper");
 			
 			GUI.init(win);
 			

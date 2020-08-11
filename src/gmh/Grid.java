@@ -1,6 +1,7 @@
 package gmh;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
@@ -417,5 +418,9 @@ public class Grid extends JPanel {
 			g2.setPaint(new Color(0.0f, 1.0f, 0.0f, 0.1f));
 			g2.fill(highlightedRect);
 		}
+	}
+	@Override
+	public Dimension getPreferredSize() {
+		return new Dimension(500, 500);
 	}
 }
